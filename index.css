@@ -20,7 +20,7 @@ body
     z-index: 1;
     left: 0px;
     top: 0px;
-    transition: left 30ms linear;
+    transition: left 1ms linear;
 }
 #player
 {
