@@ -19,10 +19,10 @@ var topFlag;
 var leftFlag;
 var ballInterval = setInterval(function(){
     var ballTrans = ball.cssFloat("transition-duration");
-    ballTrans -= 0.01;
+    ballTrans -= 0.005;
     ball.css("transition-duration", `${ballTrans}s`);
     var enemyTrans = enemy.cssFloat("transition-duration");
-    enemyTrans += 0.003;
+    enemyTrans += 0.001;
     enemy.css("transtion-duration", `${enemyTrans}s`);
 }, 6000);
 var interval = setInterval(function(){
@@ -38,7 +38,8 @@ setTimeout(() => {
 }, 30000);
 setTimeout(() => {
     clearInterval(ballInterval);
-}, 60000)
+    console.log("Ball Constant");
+}, 120000)
 function running() {
     timerId1 = setInterval(function () {
         ballLeft = ball.cssFloat("left");
